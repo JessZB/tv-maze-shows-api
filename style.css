@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root{
+  --white: #ffff;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgb(221, 131, 131);
+}
+
+h1 {
+  text-align: center;
+  padding: 1rem;
+  color: white;
+}
+
+.header{
+  padding: 1rem;
+  background-color: rgb(68, 39, 39);
+  height: 150px;
+}
+.navigation {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(133, 133, 133);
+  gap: 0.1rem;
+  max-width: 500px;
+  margin: auto;
+}
+.navigation #search {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: rgb(238, 238, 238);
+  padding: 0.5rem 1rem;
+}
+.navigation img {
+  cursor: pointer;
+  padding: 0 0.5rem;
+}
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  min-height: calc(100vh - 150px);
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  gap: 5rem;
+  padding: 3rem;
+  justify-items: center;
+
+}
+.modal-section {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: calc(100vh - 150px);
+  bottom: 0;
+  margin: auto;
+}
+.modal-section img {
+  height: 100px;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--white);
+  padding: .8rem .5rem;
+  border-radius: 1rem;
+
+}
+.show-name {
+  font-size: 1rem;
+  text-align: center;
+}
+.show-image {
+  width: auto;
+  margin: auto;
+  object-fit: contain;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.show-info {
+  font-size: 0.6rem;
+  text-align: center;
+
+  
+}
+
